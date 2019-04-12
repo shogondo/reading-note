@@ -27,18 +27,10 @@
             <table>
                 <?= $this->Form->create(null, ['type' => 'post', 'url' => ['controller' => 'Hello', 'action' => 'index']]) ?>
                     <tr>
-                        <th>Checkbox</th>
+                        <th>Select</th>
                         <td>
-                            <?= $this->Form->checkbox('Form1.check', ['id' => 'check1']) ?>
-                            <?= $this->Form->label('Form1.check1', 'check box') ?>
+                            <?= $this->Form->select('Form1.select', ['one' => '最初', 'two' => '真ん中', 'three' => '最後']) ?>
                         </td>
-                    </tr>
-                    <tr>
-                        <th>RadioButton</th>
-                        <td><?= $this->Form->radio('Form1.radio', [
-                            ['text' => 'male', 'value' => '男性', 'checked' => true],
-                            ['text' => 'female', 'value' => '女性']
-                        ]) ?></td>
                     </tr>
                     <tr>
                         <th></th>
