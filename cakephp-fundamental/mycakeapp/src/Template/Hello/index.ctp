@@ -21,25 +21,28 @@
             <h1><?= $title ?></h1>
         </header>
         <div class="row">
+            <pre><?php print_r($data); ?></pre>
+        </div>
+        <div class="row">
             <table>
-                <form method="post" action="/mycakeapp/hello/form">
+                <?= $this->Form->create(null, ['type' => 'post', 'url' => ['controller' => 'Hello', 'action' => 'index']]) ?>
                     <tr>
                         <th>name</th>
-                        <td><input type="text" name="name"></td>
+                        <td><?= $this->Form->text('Form1.name') ?></td>
                     </tr>
                     <tr>
                         <th>mail</th>
-                        <td><input type="text" name="mail"></td>
+                        <td><?= $this->Form->text('Form1.mail') ?></td>
                     </tr>
                     <tr>
                         <th>age</th>
-                        <td><input type="text" name="age"></td>
+                        <td><?= $this->Form->text('Form1.age') ?></td>
                     </tr>
                     <tr>
                         <th></th>
-                        <td><button>Click</button></td>
+                        <td><?= $this->Form->submit('送信') ?></td>
                     </tr>
-                </form>
+                <?= $this->Form->end() ?>
             </table>
         </div>
     </body>
