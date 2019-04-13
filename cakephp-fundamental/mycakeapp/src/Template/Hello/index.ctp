@@ -29,7 +29,7 @@
                     <tr>
                         <th>Select</th>
                         <td>
-                            <?= $this->Form->select('Form1.select', ['one' => '最初', 'two' => '真ん中', 'three' => '最後']) ?>
+                            <?= $this->Form->select('Form1.select', ['one' => '最初', 'two' => '２番目', 'three' => '３番目', 'four' => '４番目', 'five' => '最後'], ['multiple' => true, 'size' => 5]) ?>
                         </td>
                     </tr>
                     <tr>
