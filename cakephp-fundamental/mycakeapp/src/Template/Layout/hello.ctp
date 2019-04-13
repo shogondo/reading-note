@@ -8,13 +8,13 @@
     </head>
     <body>
         <header class="head row">
-            <h1><?= $this->fetch('title') ?></h1>
+            <?= $this->element('header', ['subtitle' => 'cakephp sample page']) ?>
         </header>
         <div class="content row">
             <?= $this->fetch('content') ?>
         </div>
         <footer class="foot row">
-            <h5>Copyright 2018 Shou Gondo</h5>
+            <?= $this->element('footer', ['copyright' => 'Shou Gondo']) ?>
         </footer>
     </body>
 </html>
