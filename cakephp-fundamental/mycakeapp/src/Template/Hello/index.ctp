@@ -17,27 +17,7 @@
         </style>
     </head>
     <body>
-        <header class="row">
-            <h1><?= $title ?></h1>
-        </header>
-        <div class="row">
-            <pre><?php print_r($data); ?></pre>
-        </div>
-        <div class="row">
-            <table>
-                <?= $this->Form->create(null, ['type' => 'post', 'url' => ['controller' => 'Hello', 'action' => 'index']]) ?>
-                    <tr>
-                        <th>Select</th>
-                        <td>
-                            <?= $this->Form->select('Form1.select', ['one' => '最初', 'two' => '２番目', 'three' => '３番目', 'four' => '４番目', 'five' => '最後'], ['multiple' => true, 'size' => 5]) ?>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <td><?= $this->Form->submit('送信') ?></td>
-                    </tr>
-                <?= $this->Form->end() ?>
-            </table>
-        </div>
+        <p>This is sample content.</p>
+        <p>これは、Hello レイアウトを利用したサンプルです。</p>
     </body>
 </html>
