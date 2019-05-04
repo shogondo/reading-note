@@ -5,7 +5,8 @@ use App\Controller\AppController;
 
 class PeopleController extends AppController {
     public function index() {
-        $data = $this->People->find('list');
+        $id = $this->request->getQuery('id');
+        $data = $this->People->get($id);
         $this->set('data', $data);
     }
 }
