@@ -9,7 +9,7 @@ spec:
     ports:
     - containerPort: 8080
       protocol: TCP
-  initContainers:                                                        1
+  initContainers:
   - name: init
     image: busybox
     command:
